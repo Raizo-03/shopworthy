@@ -1,59 +1,236 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🛒 ShopWorthy
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern, full-stack ecommerce application built with Laravel and Vue. js. 
 
-## About Laravel
+[![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat&logo=laravel)](https://laravel.com)
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.5-4FC08D?style=flat&logo=vue.js)](https://vuejs.org)
+[![Inertia.js](https://img.shields.io/badge/Inertia.js-2.2-9553E9?style=flat)](https://inertiajs.com)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-38B2AC? style=flat&logo=tailwind-css)](https://tailwindcss.com)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📋 Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ShopWorthy is a production-ready ecommerce platform that combines the power of Laravel's robust backend with Vue.js's reactive frontend, connected seamlessly through Inertia.js. The application delivers a smooth, single-page application experience with server-side routing. 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Features
 
-## Learning Laravel
+- 🛍️ **Complete Ecommerce Functionality**
+  - Product catalog with search and filtering
+  - Shopping cart and checkout process
+  - Order management
+  - User authentication and profiles
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- 🎨 **Modern Frontend**
+  - Vue.js 3 with Composition API
+  - Inertia.js for seamless SPA experience
+  - TailwindCSS 4.0 for responsive design
+  - Vite for lightning-fast builds
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- 🔧 **Robust Backend**
+  - Laravel 12 framework
+  - RESTful API architecture
+  - MySQL database
+  - Queue processing support
 
-## Laravel Sponsors
+## 🛠️ Tech Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Backend
+- **Framework:** Laravel 12.x
+- **Language:** PHP 8.2+
+- **Database:** MySQL
+- **Queue:** Laravel Queue
+- **Testing:** PHPUnit
 
-### Premium Partners
+### Frontend
+- **Framework:** Vue.js 3.5
+- **Bridge:** Inertia.js 2.2
+- **Styling:** TailwindCSS 4.0
+- **Build Tool:** Vite 7.0
+- **HTTP Client:** Axios
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 📦 Prerequisites
 
-## Contributing
+Before you begin, ensure you have the following installed:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- PHP >= 8.2
+- Composer
+- Node.js >= 18.x
+- npm or yarn
+- MySQL >= 8.0
+- Git
 
-## Code of Conduct
+## 🚀 Getting Started
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Installation
 
-## Security Vulnerabilities
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Raizo-03/shopworthy.git
+   cd shopworthy
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+2. **Install dependencies**
+   ```bash
+   composer install
+   npm install
+   ```
 
-## License
+3. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4. **Configure your database**
+   
+   Edit your `.env` file with your database credentials:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=shopworthy
+   DB_USERNAME=your_username
+   DB_PASSWORD=your_password
+   ```
+
+5. **Run migrations**
+   ```bash
+   php artisan migrate
+   ```
+
+6. **Build frontend assets**
+   ```bash
+   npm run build
+   ```
+
+### Quick Setup
+
+Alternatively, use the automated setup script:
+```bash
+composer setup
+```
+
+This will:
+- Install PHP dependencies
+- Copy environment file
+- Generate application key
+- Run database migrations
+- Install Node dependencies
+- Build frontend assets
+
+## 🏃 Running the Application
+
+### Development Mode
+
+Start all development services concurrently:
+```bash
+composer dev
+```
+
+This starts:
+- Laravel development server (http://localhost:8000)
+- Queue worker
+- Laravel Pail (log viewer)
+- Vite dev server (HMR)
+
+### Individual Services
+
+You can also run services individually: 
+
+```bash
+# Backend server
+php artisan serve
+
+# Frontend dev server (with HMR)
+npm run dev
+
+# Queue worker
+php artisan queue:listen
+
+# Log viewer
+php artisan pail
+```
+
+## 🧪 Testing
+
+Run the test suite: 
+```bash
+composer test
+```
+
+Or directly with PHPUnit: 
+```bash
+php artisan test
+```
+
+## 📁 Project Structure
+
+```
+shopworthy/
+├── app/                    # Application core
+│   ├── Http/              # Controllers, Middleware
+│   ├── Models/            # Eloquent models
+│   └── Services/          # Business logic
+├── bootstrap/             # Framework bootstrap
+├── config/                # Configuration files
+├── database/              # Migrations, seeders, factories
+├── public/                # Public assets
+├── resources/             # Views, Vue components, CSS
+│   ├── js/               # Vue. js components
+│   └── views/            # Blade templates
+├── routes/                # Route definitions
+├── storage/               # Logs, cache, uploads
+├── tests/                 # Test suites
+├── . env. example          # Environment template
+├── composer.json         # PHP dependencies
+├── package.json          # Node dependencies
+├── vite.config.js        # Vite configuration
+└── artisan               # Laravel CLI
+```
+
+## 🔐 Environment Variables
+
+Key environment variables to configure:
+
+```env
+APP_NAME=ShopWorthy
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=shopworthy
+DB_USERNAME=root
+DB_PASSWORD=
+
+QUEUE_CONNECTION=sync
+```
+
+## 📚 Documentation
+
+- [Laravel Documentation](https://laravel.com/docs/12.x)
+- [Vue.js Documentation](https://vuejs.org/guide/)
+- [Inertia. js Documentation](https://inertiajs.com/)
+- [TailwindCSS Documentation](https://tailwindcss.com/docs)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. 
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+## 👤 Author
+
+**Raizo-03**
+
+- GitHub: [@Raizo-03](https://github.com/Raizo-03)
