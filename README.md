@@ -5,7 +5,7 @@ A modern, full-stack ecommerce application built with Laravel and Vue. js.
 [![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat&logo=laravel)](https://laravel.com)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.5-4FC08D?style=flat&logo=vue.js)](https://vuejs.org)
 [![Inertia.js](https://img.shields.io/badge/Inertia.js-2.2-9553E9?style=flat)](https://inertiajs.com)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-38B2AC? style=flat&logo=tailwind-css)](https://tailwindcss.com)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com)
 
 ## 📋 Overview
 
